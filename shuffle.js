@@ -57,34 +57,5 @@ function insertHobiit(insertedArray, arr2, interval) {
 
 console.log(insertHobiit(insertedArray,arr2, interval));
 
-// 10 5 2  no if 
-
-// 8 5 2 no if 
-
-// 8 5 3 nn h nn h nn h nn h if -1
-
-// 5 3 2 no if
-
-// 5 3 3 nn h nn h n if 
-
-// 8 5 3 nn h nn h nn h nn h if -1
-
-// 9 5 3 nn h nn h nn h nn h n if -1
-
-
-// 5 3 3 nn h nn h n -1
-
-// 4 3 3 nn h nn h - 1
-
-// 9 4 4 nnn h nnn h nnn h  - 1
-// 10 4 4 nnn h nnn h nnn h n - 1
-
-
-// arr3.splice((index+1*interval)*interval-1,0,el)})
-
-
-
-// ЗАВДАННЯ 1) Позбутися delete 2) Позбутися for на початку 3) Назвати абсолютно все 4) Заімпортувати функції в індекс джс
-// 5) цсс
 
 

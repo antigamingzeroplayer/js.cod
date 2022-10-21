@@ -2,7 +2,7 @@ import shuffle from './helpers/randomHelpers.js'
 
 const arr1 = ["Frodo", "Sam", "Pipin", "Marry", 'Gendalf']
 
-const szArr = 5
+const szArr = 0
 const arr2 = Array(szArr)
 
 arr2.fill('numenores')
@@ -13,10 +13,14 @@ function insertHobiit(arr1, arr2) {
     const arr3 = arr2.slice() 
     // console.log(arr1.length);
     // console.log(arr2.length/3);
-    for(let arr1MaxIndex = arr1.length; arr1MaxIndex >= Math.ceil(arr2.length/3); arr1MaxIndex--) {
-        console.log(arr1MaxIndex);
-        console.log(arr2.length/3);
-        if (arr2.length < arr1.length *3-1) {
+   
+   if (arr2 <= 1) {
+     arr1.length = 0
+   }
+   
+    for(let arr1MaxIndex = arr1.length; arr1MaxIndex > Math.trunc(arr2.length/3+1); arr1MaxIndex--) {
+            console.log(arr1MaxIndex *3-2);
+        if (arr2.length <= arr1MaxIndex) {
             delete arr1[arr1MaxIndex]
             console.log('delete'+arr1MaxIndex);
           } else {
@@ -37,7 +41,8 @@ function insertHobiit(arr1, arr2) {
     //   delete arr1[0]
     // }
   
-    
+    console.log(arr2.length);
+    console.log(arr1.length);
     if (arr2.length > arr1.length*4-2) {
         console.log('if')
       let HobName = 0

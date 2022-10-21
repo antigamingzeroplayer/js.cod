@@ -19,6 +19,8 @@ export default function shuffle(array) {
 }
 
 
+
+
 // let gen_nums = [] 
 
 
